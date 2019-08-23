@@ -35,7 +35,9 @@ console.log(result);
  */
 
 function sumWithDefaults(a, b = 100) {return a + b;}
-
+    
+    var f = sumWithDefaults();
+console.log(f());
 /*
  Задание 3:
 
@@ -48,7 +50,7 @@ function sumWithDefaults(a, b = 100) {return a + b;}
 function returnFnResult(fn) {
     return fn()
 }
-
+console.log(returnFnResult(() => 'привет'));
 /*
  Задание 4:
 
@@ -67,6 +69,11 @@ function returnCounter(number) {
         return ++a;
 }
 
+var f = returnCounter(10);
+
+console.log(f());
+console.log(f());
+console.log(f());
 /*
  Задание 5 *:
 
@@ -77,10 +84,10 @@ function returnCounter(number) {
    returnArgumentsArray(1, 2, 3) вернет [1, 2, 3]
  */
 function returnArgumentsArray() {
-  var result = [];
     for (var i = 0; i < arguments.length; i++) {
-        result[i] = arguments[i];
+        return arguments};
 }
+  console.log(returnArgumentsArray(1,2,3,4,5));
 
 /*
  Задание 6 *:
