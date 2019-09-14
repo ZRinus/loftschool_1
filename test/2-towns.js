@@ -1,5 +1,5 @@
 import assert from 'assert';
-let template = require('../src/towns-content.hbs');
+let template = require('../towns-content.hbs');
 
 describe('ДЗ 6.2 - Фильтр городов', () => {
     let homeworkContainer = document.createElement('div');

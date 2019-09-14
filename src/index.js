@@ -15,12 +15,13 @@ function delayPromise(seconds) {
         setTimeout(() => resolve(), milliSeconds );
     });
 }
+
 /*
  Задание 2:
 
  2.1: Функция должна вернуть Promise, который должен быть разрешен с массивом городов в качестве значения
 
- Массив городов можно получить отправив асинхронный запрос по адресу
+ Массив городов пожно получить отправив асинхронный запрос по адресу
  https://raw.githubusercontent.com/smelukov/citiesTest/master/cities.json
 
  2.2: Элементы полученного массива должны быть отсортированы по имени города
@@ -45,7 +46,7 @@ function loadAndSortTowns() {
                         return -1;
                     }
                 });
-
+    
                 resolve(result);
             }
         };
